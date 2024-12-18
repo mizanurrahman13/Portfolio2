@@ -1,2 +1,50 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.sidebar{
+    position: fixed;
+    bottom: 0;
+    left: 4rem;
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        &:hover{
+            transform: translateY(-4px);
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: .125rem;
+            height: 5.625rem;
+            background-color: $light-slate;
+            margin: 0 auto;
+        }
+    }
+    &__list-item{
+        @include text-large2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 3s ease-in-out;
+    }
+    &__list-item-link{
+        padding: .625rem;
+        color: $lightest-slate;
+        transition: 0.3s ease-in-out;
+        outline: 2px dashed transparent;
+        &:hover{
+            color: $theme-color;
+        }
+        &:last-child{
+            margin-bottom: 2rem;
+        }
+        &:focus{
+            outline: 2px dashed $theme-color;
+            transform: translateY(-4px);
+            color: $theme-color;
+        }
+    }
+}
