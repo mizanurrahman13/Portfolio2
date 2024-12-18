@@ -19,7 +19,7 @@
             display: block;
             width: .125rem;
             height: 5.625rem;
-            background-color: $light-slate;
+            background-color: $light-brown;
             margin: 0 auto;
         }
     }
@@ -32,7 +32,7 @@
     }
     &__list-item-link{
         padding: .625rem;
-        color: $lightest-slate;
+        color: $lightest-brown;
         transition: 0.3s ease-in-out;
         outline: 2px dashed transparent;
         &:hover{
