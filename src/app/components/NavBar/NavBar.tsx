@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.scss";
 import Link from "next/link";
-import Button from "../Button/Button";
 import { motion } from "framer-motion";
 
 function NavBar() {
@@ -58,18 +57,6 @@ function NavBar() {
                 </Link>
               </motion.li>
             ))}
-            <motion.div
-              className="nav__button"
-              initial={{ opacity: 0, y: -25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeInOut",
-                delay: 0.6,
-              }}
-            >
-              <Button text="Resume" href="/resume.pdf" />
-            </motion.div>
           </ul>
         </div>
       </div>
