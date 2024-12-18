@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.btn{
+    color: $theme-color;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid $theme-color;
+    border-radius: 4px;
+    @include text-small;
+    outline: none;
+
+    &:focus, &:hover{
+        background-color: $light-cream;
+
+    }
+}
