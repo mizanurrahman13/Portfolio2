@@ -1,2 +1,39 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.email{
+    position: fixed;
+    bottom: 0;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__link{
+        writing-mode: vertical-rl;
+        text-decoration: none;
+        color: $light-brown;
+        @include text-small2;
+        letter-spacing: 0.1rem;
+        padding: .625rem;
+        outline: 2px dashed transparent;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            color: $theme-color;
+        }
+        &:focus{
+            outline-color: $theme-color;
+            transform: translateY(4px);
+            color: $theme-color;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: .125rem;
+            height: 5.625rem;
+            background-color: $light-brown;
+            margin: 0 auto;
+        }
+    }
+}
