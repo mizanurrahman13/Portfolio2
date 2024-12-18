@@ -2,7 +2,7 @@
 import React from "react";
 import "./Hero.scss"
 import Link from "next/link";
-// import Button from "../Button/Button";
+import Button from "../Button/Button";
 import {motion} from "framer-motion";
 
 
@@ -53,8 +53,8 @@ function Hero() {
           delay: 1.65,
         }}
       >
-        {/* <Button text="Check out my Linkedin" 
-        href="https://www.linkedin.com/in/maria-lukowich/"></Button> */}
+        <Button text="Check out my Linkedin" 
+        href="https://www.linkedin.com/in/maria-lukowich/"></Button>
       </motion.div>
     </div>
   )
