@@ -1,2 +1,48 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 70px;
+    position: relative;
+    
+
+    &__link{
+        text-decoration: none;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        color: $theme-color;
+        outline: 2px dashed transparent;
+        transition: 0.3s ease-in-out;
+        padding: 10px;
+        @include text-small1;
+
+        &:focus{
+            outline-color: $theme-color;
+        }
+    }
+    &__info{
+        text-align: center;
+    }
+    &__github{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 1rem;
+    }
+    &__github-item{
+        display: flex;
+        gap: 0.3rem;
+
+    }
+    &__github-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $accent-color;
+    }
+}
