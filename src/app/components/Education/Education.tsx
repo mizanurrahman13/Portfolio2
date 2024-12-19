@@ -143,7 +143,7 @@ function Education() {
       </ul>
         <div className="education__details">
           <div className="education__details-position">
-            <h3>
+            <h3 className="education__details-position-wrapper">
               <span>{educations[selected].name}</span>
               <span className="education__details-position-school">
                 &nbsp;at&nbsp;
