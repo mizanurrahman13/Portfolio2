@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-left: 30px;
 
     &__title-wrapper{
         color: $lightest-brown;
@@ -88,7 +89,7 @@
     }
     &__info{
         z-index: 5;
-        width: 250px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
