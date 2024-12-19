@@ -16,12 +16,14 @@ function NavBar() {
   ];
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       window.pageYOffset > 100 ? setNavBarVisible(true) : setNavBarVisible(false);
-    });
-
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
     return () => {
-      window.removeEventListener("scroll", () => {});
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
