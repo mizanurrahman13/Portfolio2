@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./Contact.scss"
-// import Button from "../Button/Button";
+import Button from "../Button/Button";
 import {motion} from "framer-motion";
 
 function Contact() {
@@ -25,7 +25,7 @@ function Contact() {
           If you have any questions or ideas, feel free to reach out—I’d love to connect!
           </p>  
           <div className="contact__cta">
-              {/* <Button text="Email Me" href="mailto:mlukowich27@gmail.com" /> */}
+              <Button text="Email Me" href="mailto:mlukowich27@gmail.com" />
           </div>
         </div>
     </motion.div>

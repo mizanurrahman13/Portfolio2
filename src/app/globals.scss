@@ -11,6 +11,7 @@ body{
     counter-reset: title;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body, html{
@@ -20,6 +21,7 @@ body, html{
 html{
     scrollbar-width: thin;
     scrollbar-color: #c2a69a #f6ece1;
+    overflow-x: hidden;
 }
 
 .blur{
