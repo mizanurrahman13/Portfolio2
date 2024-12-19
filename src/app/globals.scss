@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata";
+}
+
+
+body{
+    background-color: #f6ece1;
+    counter-reset: title;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body, html{
+    scroll-behavior: smooth !important;
+}
+
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #c2a69a #f6ece1;
+    overflow-x: hidden;
+}
+
+.blur{
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+::-moz-selection{
+    color: white;
+    background-color: #e57373;
+}
+
+::selection{
+    color: white;
+    background-color: #e57373;
+}
+
+.link{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #f06292;
+
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: .0313rem;
+        bottom: 0;
+        left: 0;
+        background-color: #e91e63;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    &:hover, &:focus{
+        &::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    &-track{
+        background-color: #f6ece1;
+    }
+    &-thumb{
+        background-color: #c2a69a;
+        border: 3px solid #f6ece1;
+        border-radius: 10px;
+    }
+}

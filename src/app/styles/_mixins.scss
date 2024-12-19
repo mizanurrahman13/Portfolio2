@@ -1,0 +1,108 @@
+@use "./variables" as *;
+
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+};
+
+@mixin desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+};
+
+@mixin text-small {
+    font-size: .8125rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+    font-family: "Inconsolata";
+}
+@mixin text-small1 {
+    font-size: .875rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+    font-family: "Inconsolata";
+}
+@mixin text-small2 {
+    font-size: .9375rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+    font-family: "Inconsolata";
+}
+@mixin text-base {
+    font-size: 1rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    font-family: "Inconsolata";
+}
+@mixin text-large {
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    font-family: "Inconsolata";
+}
+@mixin text-large2 {
+    font-size: 1.375rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    font-family: "Inconsolata";
+}
+@mixin text-Xlarge {
+    font-size: 1.5625rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    font-family: "Inconsolata";
+}
+@mixin text-Xlarge2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    font-family: "Inconsolata";
+}
+@mixin text-giant {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 700;
+    font-family: "Inconsolata";
+}
+
+// flex mixins
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center-content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin flex-center-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-center-items-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-start-justify{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+}
