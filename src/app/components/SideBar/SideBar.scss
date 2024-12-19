@@ -2,6 +2,7 @@
 @use "../../styles/mixins" as *;
 
 .sidebar{
+    visibility: hidden;
     position: fixed;
     bottom: 0;
     left: 1rem;
@@ -48,9 +49,11 @@
         }
     }
     @include tablet{
+        visibility: visible;
         left: 3rem;
     }
     @include desktop{
+        visibility: visible;
         left: 4rem;
     }
 }
