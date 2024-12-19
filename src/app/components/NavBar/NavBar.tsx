@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./NavBar.scss";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function NavBar() {
   const [navBarVisible, setNavBarVisible] = useState(false);
@@ -34,7 +35,7 @@ function NavBar() {
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <Link className="nav__link" href="https://github.com/Marie-L1">
-            <img className="nav__logo" src="/images/m-logo-2.svg" alt="logo" />
+            <Image className="nav__logo" src="/images/m-logo-2.svg" alt="logo" />
           </Link>
         </motion.div>
 
