@@ -18,11 +18,11 @@ function Contact() {
       }}
       >
         <div className="contact__wrapper">
-          <h2 className="contact__title">Let'&apos;s Connect!</h2>
+          <h2 className="contact__title">Let&apos;s Connect!</h2>
           <h2 className="contact__sub-title">Get in Touch</h2>
           <p className="contact__text">
-          I'&apos;m always open to new opportunities and collaborations. 
-          If you have any questions or ideas, feel free to reach out—I’d love to connect!
+          I&apos;m always open to new opportunities and collaborations. 
+          If you have any questions or ideas, feel free to reach out—I&apos;d love to connect!
           </p>  
           <div className="contact__cta">
               <Button text="Email Me" href="mailto:mlukowich27@gmail.com" />

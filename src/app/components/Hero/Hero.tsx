@@ -39,7 +39,7 @@ function Hero() {
           delay: 1.35,
         }}
       >
-        I'&apos;m a Food Researcher turned Web Developer. I love creating user-focused 
+        I&apos;m a Food Researcher turned Web Developer. I love creating user-focused 
         web applications and learning new technologies. My current focus is on&nbsp;
         <Link href="https://www.typescriptlang.org/" target="_blank" className="link">TypeScript</Link> and&nbsp; 
         <Link href="https://nextjs.org/" target="_blank" className="link">Next.js</Link>.
