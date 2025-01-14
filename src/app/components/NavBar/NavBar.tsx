@@ -37,7 +37,7 @@ function NavBar() {
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <Link className="nav__link" href="https://github.com/Marie-L1">
-            <Image className="nav__logo" src="/images/m-logo-2.svg" alt="logo" />
+            <Image className="nav__logo" src="/images/m-logo-2.svg" alt="logo" width={300} height={200} />
           </Link>
         </motion.div>
 
